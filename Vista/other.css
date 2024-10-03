@@ -1,0 +1,19 @@
+.page-heading-login {
+    padding-top: 65px;
+display: flex;
+justify-content: center;
+}
+.login-form
+{
+    margin-top: 35px;
+}
+.registrar {
+    text-align: center;
+}
+
+.logoarriba {
+position:absolute;
+height: 90px;
+width: 120px;
+margin-right: 40px;
+}

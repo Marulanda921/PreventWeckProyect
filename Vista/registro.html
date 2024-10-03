@@ -1,0 +1,114 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="hassets/img/logomorado.png">
+    <link rel="stylesheet" href="principal.css">
+    <link rel="stylesheet" href="logincss.css">
+    <link rel="stylesheet" href="other.css">
+    <title>PreventWeck</title>
+</head>
+
+<body>
+    <header>
+        <a href="" class="logo">PreventWeck</a>
+        <div class="menuToggle" onclick="toggleMenu();" ></div>
+        <ul class="navegacion">
+            <li><a href="index.html">Volver al menú principal</a></li>
+        </ul>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <main class="main">
+        <section class="page-wrapper">
+            <div class="page-heading-login">
+                <h3 class="section-title"> Registro</h3>
+            </div>
+            <form class="login-form">
+                <div class="form-field-wrapper">
+                    <label>Nombre Completo</label>
+                    <input 
+                    type="text"
+                    class="text-box" 
+                    name="name" 
+                    placeholder="Ingresar nombre de usuario" 
+                    autocomplete="off"
+                    required> 
+                </div>
+                <div class="form-field-wrapper">
+                    <label>Correo electrónico</label>
+                    <input 
+                    type="email" 
+                    class="text-box" 
+                    name="email" 
+                    placeholder="Ingresar correo electrónico" 
+                    autocomplete="off"
+                    required
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"> 
+                </div>
+                <div class="form-field-wrapper">
+                    <label>Contraseña</label>
+                    <input 
+                    type="password" 
+                    class="text-box" 
+                    name="password" 
+                    placeholder="Ingresar una contraseña" 
+                    autocomplete="off"
+                    required
+                    pattern="[a-z0-9._%+-]"> 
+                </div>
+                <div class="form-field-wrapper">
+                    <label>Confirmar Contraseña</label>
+                    <input 
+                    type="password" 
+                    class="text-box" 
+                    name="confirm-password" 
+                    placeholder="Ingresar de nuevo tu contraseña" 
+                    autocomplete="off"
+                    required
+                    pattern="[a-z0-9._%+-]> 
+                </div>
+                <div class="form-action">
+                    <button class=" custom-button default-button" type="submit"> REGISTRARSE</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <br> 
+    <br>
+    <div class="registrar">
+        <br>
+        <h4>¿Ya tienes cuenta? <a href="../Vista/Login.html">Ingresa Aquí</a> </h4>
+        <br>
+        
+    </div>
+    <br> <br>
+    <div class="copyrightText">
+        <p>Copyright 2021 PreventWeck <a href="https://concejodemedellin.edu.co/">IECM </a>todos los derechos reservados.</p>
+        </div>
+    
+    
+        <script type="text/javascript">
+            window.addEventListener("scroll", function () {
+                const header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+    
+            });
+    
+            function toggleMenu(){
+                const menuToggle = document.querySelector(".menuToggle");
+                const navegacion = document.querySelector(".navegacion");
+                menuToggle.classList.toggle("active");
+                navegacion.classList.toggle("active");
+            }
+        </script>
+</body>
+</html>

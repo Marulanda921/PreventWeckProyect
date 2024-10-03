@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/logomorado.png">
+    <link rel="stylesheet" href="principal.css">
+    <title>PreventWeck - Anticonceptivos</title>
+</head>
+
+<body>
+    <header>
+        <a href="" class="logo">PreventWeck</a>
+        <div class="menuToggle" onclick="toggleMenu();" ></div>
+        <ul class="navegacion">
+            <li><a href="#banner" onclick="toggleMenu();">Inicio</a></li>
+            <li><a href="#Nosotros" onclick="toggleMenu();">metodos</a></li>
+        </ul>
+    </header>
+    <section class="Nosotros" id="Nosotros">
+        <div class="hilera">
+                <h2 class="titulo"><span>D</span>escubre los metodos anticonceptivos más usados:</h2>
+                <br>
+                <br>
+                <br>
+                <p>Los métodos anticonceptivos son diferentes formas para prevenir el embarazo. Hay muchos tipos de anticonceptivos, por lo que tienes varias opciones para elegir la adecuada para ti. Aquí encontrarás la información necesaria sobre cada uno de ellos. Estamos aquí para ayudarte. 
+                </p>
+                <br>
+                <br>
+                <br>
+                <a href="" class="btn">Mira más información</a>
+                <br>
+                <br><br><br><br><br><br>
+                <div class="imgBx">
+                    <img src="https://losanticonceptivos.com/wp-content/uploads/2018/11/46508982_569953390114886_4947500753863311360_n.jpg">
+            </div>
+        </div>
+    </section>
+
+    
+
+
+    
+
+<div class="copyrightText">
+    <p>Copyright 2021 PreventWeck <a href="https://concejodemedellin.edu.co/">IECM </a>todos los derechos reservados.</p>
+    </div>
+
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            const header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+
+        });
+
+        function toggleMenu(){
+            const menuToggle = document.querySelector(".menuToggle");
+            const navegacion = document.querySelector(".navegacion");
+            menuToggle.classList.toggle("active");
+            navegacion.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>
